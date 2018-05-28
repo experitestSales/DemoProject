@@ -9,7 +9,7 @@ import com.seetest.framework.core.MobileDeviceType;
 import com.seetest.framework.core.MobileOS;
 import com.seetest.framework.core.MobileObject;
 
-public class LoginPage extends BaseEribankPage {
+public class LoginPage extends BaseEribankPage{
 	
 	@FindByIOS(xpath="//*[@accessibilityIdentifier='logo.png']")
 	@FindByAndroid(xpath="xpath=//*[@class='android.widget.ImageView']")
