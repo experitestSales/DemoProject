@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Morgan Stanley Web]" parallel="tests">
+  <parameter name="capture.device.log" value="false"/>
+  <parameter name="launch.url" value="http://www.morganstanley.com"/>
+  <parameter name="run.on.grid" value="false"/>
+  <parameter name="data.file.name" value="morgan_Stanley_web.properties"/>
+  <parameter name="app.type" value="web"/>
+  <test name="Morgan Stanley Web iOS(failed)" parallel="tests">
+    <parameter name="test.id" value="2"/>
+    <parameter name="device.query" value="@os=&#039;ios&#039;"/>
+    <classes>
+      <class name="com.seetest.apps.morgan_stanley.web.tests.Sanity">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifyHomePageExternalLink"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="VerfiyHomePageUI"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.seetest.apps.morgan_stanley.web.tests.Sanity -->
+    </classes>
+  </test> <!-- Morgan Stanley Web iOS(failed) -->
+</suite> <!-- Failed suite [Morgan Stanley Web] -->

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Supervalue]" parallel="tests">
+  <parameter name="capture.device.log" value="false"/>
+  <parameter name="install.before.test" value="false"/>
+  <parameter name="android.app.instrumentation" value="true"/>
+  <parameter name="run.on.grid" value="true"/>
+  <parameter name="ios.build.path" value=""/>
+  <parameter name="ios.app.bundle.id" value="com.supervalu.b2c.cub"/>
+  <parameter name="ios.app.instrumentation" value="false"/>
+  <parameter name="android.app.package" value="com.supervalu.android.farmfresh"/>
+  <parameter name="data.file.name" value="supervalu.properties"/>
+  <parameter name="app.type" value="native"/>
+  <parameter name="android.build.path" value=""/>
+  <parameter name="android.app.launch.activity" value="com.supervalu.mobile.android.viewcontrollers.SplashScreenActivity"/>
+  <test name="Supervalu Android(failed)" parallel="tests">
+    <parameter name="test.id" value="1"/>
+    <parameter name="device.query" value="@os=&#039;android&#039; and contains(@name,&#039;SM&#039;)"/>
+    <classes>
+      <class name="com.seetest.apps.supervalu.tests.Sanity">
+        <methods>
+          <include name="VerfiyHomePageUI"/>
+          <include name="beforeSuite"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterTest"/>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.seetest.apps.supervalu.tests.Sanity -->
+    </classes>
+  </test> <!-- Supervalu Android(failed) -->
+</suite> <!-- Failed suite [Supervalue] -->

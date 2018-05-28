@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Eribank]" parallel="tests">
+  <parameter name="capture.device.log" value="false"/>
+  <parameter name="install.before.test" value="false"/>
+  <parameter name="android.app.instrumentation" value="true"/>
+  <parameter name="run.on.grid" value="true"/>
+  <parameter name="ios.build.path" value=""/>
+  <parameter name="ios.app.bundle.id" value="com.experitest.ExperiBankO"/>
+  <parameter name="ios.app.instrumentation" value="true"/>
+  <parameter name="android.app.package" value="com.experitest.ExperiBank"/>
+  <parameter name="data.file.name" value="eribank.properties"/>
+  <parameter name="app.type" value="native"/>
+  <parameter name="android.build.path" value=""/>
+  <parameter name="android.app.launch.activity" value=".LoginActivity"/>
+  <test name="Eribank iOS(failed)" parallel="tests">
+    <parameter name="test.id" value="2"/>
+    <parameter name="device.query" value="@os=&#039;ios&#039;"/>
+    <classes>
+      <class name="com.seetest.apps.eribank.tests.Sanity">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="VerfiyHomePageUI"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.seetest.apps.eribank.tests.Sanity -->
+    </classes>
+  </test> <!-- Eribank iOS(failed) -->
+</suite> <!-- Failed suite [Eribank] -->
