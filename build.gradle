@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.experitest:seetest-client:11.6'
+    compile 'com.experitest:seetest-client:11.7'
     compile 'com.experitest:manager-client:1.6'
     compile 'org.testng:testng:6.10'
 }
